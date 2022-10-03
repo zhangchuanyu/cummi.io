@@ -1308,3 +1308,10 @@ section {
   width: 278px;
   border:none;
 }
+@media only screen and (max-width: 600px) {
+  .logoImg {
+    height: auto;
+    width: 100%;
+    border:none;
+  }
+}
