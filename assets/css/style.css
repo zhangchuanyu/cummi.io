@@ -122,6 +122,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   transition: all 0.5s;
   z-index: 996;
+  background: white;
 }
 #topbar.topbar-scrolled {
   top: -40px;
@@ -162,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid rgba(12, 11, 9, 0.6);
   transition: all 0.5s;
   z-index: 997;
- /* padding: 15px 0 !important;*/
+  background: white;
   top: 40px;
   opacity: 0.8;
 }
@@ -402,22 +403,30 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background-color: white;
-  background-size: cover;
   position: relative;
   padding: 0;
+  background: url("../img/canting.jpg") center center;
+  background-size: cover;
+  position: relative;
+
 }
 #hero:before {
   content: "";
-  background: white;
   position: absolute;
   bottom: 0;
+
   top: 0;
   left: 0;
   right: 0;
+  background: url("../img/canting.jpg") center center;
+  background-size: cover;
+  position: relative;
 }
 #hero .container {
   padding-top: 110px;
+}
+.bannerButton{
+  background: #eb9b34;
 }
 @media (max-width: 992px) {
   #hero .container {
@@ -435,8 +444,11 @@ h1, h2, h3, h4, h5, h6 {
 #hero h1 span {
   color: #cda45e;
 }
+.bannerSection{
+  text-align: end;
+}
 #hero h2 {
-  color: black;
+  color: white;
   margin-bottom: 10px 0 0 0;
   font-size: 22px;
 }
@@ -453,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   transition: 0.3s;
   line-height: 1;
-  color: #cda45e;
+  color: white;
   border: 2px solid #cda45e;
 }
 #hero .btn-menu:hover, #hero .btn-book:hover {
@@ -1307,4 +1319,12 @@ section {
   height: 120px;
   width: 278px;
   border:none;
+}
+
+@media only screen and (max-width: 600px) {
+  .logoImg {
+    height: auto;
+    width: 100%;
+    border:none;
+  }
 }
