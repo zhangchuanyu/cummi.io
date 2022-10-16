@@ -184,6 +184,13 @@
 
       let menuFilters = select('#menu-flters li', true);
 
+      menuIsotope.arrange({
+          filter: menuFilters[0].getAttribute('data-filter')
+        });
+        menuIsotope.on('arrangeComplete', function() {
+          AOS.refresh()
+        })
+      
       on('click', '#menu-flters li', function(e) {
         e.preventDefault();
         menuFilters.forEach(function(el) {
